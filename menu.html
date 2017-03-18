@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+       <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IceCream Shop</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=.6">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+    <body>
+     
+<div id="container">
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic1">
+    <i>+</i>
+    <h3 id="item-one">Ice Cream #1</h3>
+    <p>4.99</p>
+  </div>
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic1">
+    <i>+</i>
+    <h3 id="item-one">Ice Cream #1</h3>
+    <p>4.99</p>
+  </div>
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic1">
+    <i>+</i>
+    <h3 id="item-one">Ice Cream #1</h3>
+    <p>4.99</p>
+  </div>
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic2">
+    <i>+</i>
+    <h3 id="item-two">Ice Cream #2</h3>
+    <p>4.99</p>
+  </div>
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic2">
+    <i>+</i>
+    <h3 id="item-two">Ice Cream #3</h3>
+    <p>4.99</p>
+  </div>
+  <div class="box">
+    <img src="http://imgur.com/3Bvjfci.png" alt="pic3">
+    <i>+</i>
+    <h3 id="item-three">Ice Cream #4</h3>
+    <p>4.99</p>
+  </div>
+  <div id="cart">
+    <div id="head">
+      <h3>Shopping Cart</h3>
+      <div id="price">Price</div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<script>
+$(".box i").click(function() {
+
+  var pimg = $(this).siblings("img").attr('src');
+  var pimgNo = $(this).siblings("img").attr('alt');
+  var pname = $(this).siblings("h3").text();
+  var pprice = $(this).siblings("p").text();
+  var pqty = 1;
+  var total = parseFloat(pprice);
+  var info = $('<div class="row">' + '<img class="pimg" src="' + pimg + '" class="' + pimgNo + '">' + '<h4>' + pname + "</h4>" + '<p>' + pprice + "</p>" + '<div class="del">Remove</div>' + '</div>');
+
+  /*add item*/
+  $("#cart").append(info);
+
+  
+
+
+  /*delete item*/
+  $('.del').click(function() {
+    $(this).parents(".row").remove();
+  });
+});
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IceCream Shop</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="burger text-center">
+  <h1>Ice Cream Shop</h1>
+  <div class="topBun"><img  src="http://imgur.com/3Bvjfci.png" alt="Top bun">
+    </button>  
+    <div id="bunHidden">
+      <h3>We Love iceCream and We Show it by providing the best service.</h3>
+      <h3>BLAH BLAH BLAH</h3>
+    </div>
+  </div>
+  <div class="lettuce"><img src="http://imgur.com/lJFGHiw.png"alt="Lettuce">
+    <div id="lettuceHidden">
+      <h3>We are Located on blah blah st</h3>
+    </div>
+  </div>
+  <div class="tomato"><img src="http://imgur.com/I7QTxod.png"alt="Tomato">
+    <div id="tomatoHidden">
+      <h3>Social Media Link 1</h3>
+      <h3>social Media Link 2</h3>
+    </div>
+  </div>
+  <div class="btmstick"> <a href="menu.html"><img src=http://imgur.com/8g8KiQd.png"></div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      
+    $(".topBun img").click(function(){
+        $("#bunHidden").toggle();
+        $("#bunHidden").addClass("animated pulse");
+    });
+    $(".lettuce img").click(function(){
+      $("#lettuceHidden").toggle();
+      $("#lettuceHidden").addClass("animated pulse");
+    })
+    $(".tomato img").click(function(){
+      $("#tomatoHidden").toggle();
+      $("#tomatoHidden").addClass("animated pulse");
+    })   
+    });
+    </script>
+</body>
+
+</html>
