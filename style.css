@@ -1,197 +1,148 @@
-
-
 body{
-    background-color: #FFF3DF;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #333;
+	background-color: #eee;
 }
-img{
-    width: 10%;
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
 }
-h1, h3{
-    font-family: 'Indie Flower', Arial, Sans-Serif;
+.title{
+  
+  text-align: center;
+	margin:  auto;
+  padding-top: 30px;
 }
 h1{
-    font-size: 500%;  
-    margin-bottom: 2%;
- 
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 40px;
+	max-width: 40%;
+	margin: 20px auto;
 }
 h3{
-    font-size: 200%;
-}
-.burger{
-    margin-top: 10%;
-}
-#bunHidden, #lettuceHidden, #tomatoHidden, #baconHidden, #cheeseHidden, #pattyHidden{
-    display:none;
-  } 
-  .topBun{
-    margin-bottom: 0.5%;  
-}
- .lettuce{
-    margin-bottom: 0.5%; 
-    margin: auto; 
-}
-.lettuce{
-    margin-bottom: 0.5%;  
-}
-.btmstick{
-    margin-top: 4.5%;
-    margin-bottom: 0.5%;
-    -ms-transform: rotate(90deg); 
-    -webkit-transform: rotate(90deg);  
-    transform: rotate(90deg);
+	text-align: center;
+	padding-bottom: 10px;;
+	max-width: 40%;
+	margin: 20px auto;
 }
 
-@media screen and (max-width: 500px){
-    img{
-        width: 50%;
-    }
-    .btmstick{
-        margin-top: 22%;
-    }
-    .box{
-        display: inline-block;
-    }
-    
+/* -------------Social ------------------*/
+
+.socialinfo {
+  text-align: center; 
+}
+.socialimg{
+  width: 100px;
+  padding: 10px;
+}
+.whoimage{
+  padding-top: 20px;
+  text-align:center;
+}
+.whoimage1{
+  padding-top: 50px;
+  text-align:center;
 }
 
 
-@media (max-width:1400px) and (min-width:500px){
-    .box{
-        display: inline-block;
-    }
-    #container{
-        width: 800px;
-    }
+/* -------------Container ------------------*/
+
+.container {max-width: 850px; width: 100%; margin: 0 auto;}
+.radioone { width: 18%; max-width: 18%;}
+.radioone img{
+  width: 120%;
 }
 
-/*------Menu Page--------*/
+/*------------- Columns -------------------*/
 
-
-
-#container {
-  width: 600px;
-  margin:auto;
-}
-
-.box {
-  width: 230px;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin: 10px 10px;
-  position: relative;
-}
-
-.box img {
-  width: 230px;
-}
-
-.box i {
-  width: 50px;
-  height: 50px;
-  background: #00796B;
-  color: #ffffff;
-  border-radius: 25px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 1.4rem;
-  position: absolute;
-  right: 20px;
-  top: 150px;
-  box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.box i:hover {
-  transform: scale(1.05);
-}
-
-.box h3 {
-    font-size: 20px;
-  margin-left: 20px;
-}
-
-.box p {
-  margin-left: 20px;
-}
-
-#cart {
-  margin-top: 50px;
-  overflow: hidden;
-}
-
-#head {
-  width: 100%;
-  border-bottom: 1px solid #BFBFBF;
-  height: 40px;
+.col {
   display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
 }
 
-#head h3 {
-  display: inline-block;
-  line-height: 40px;
-  margin: 0;
+.col:first-of-type { margin-left: 0; }
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
 }
 
-#price {
-  display: inline-block;
-  color: #777777;
-  margin-left: 100px;
-  line-height: 40px;
+.cf:after {
+    clear: both;
 }
 
-
-
-.row {
-  width: 100%;
-  border-bottom: 1px solid #BFBFBF;
-  overflow: hidden;
-  padding: 10px 0;
-  display:block;
-  flaot:left;
+.cf {
+    *zoom: 1;
 }
 
-.row img {
-  height: 100px;
-  width: 100px;
-  float: left;
+/* ----------Label Boxes -----*/
+
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
 }
 
-.row h4 {
-  float: left;
-  margin: 0;
-  line-height: 100px;
-  margin-left: 20px;
-  width: 100px;
+.form label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 20px;
+	text-align: center;
+	height: 150px;
+	line-height: 250px;
+	display: block;
+	cursor: pointer;
+	border: 5px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.row p {
-  float: left;
-  margin: 0;
-  width: 80px;
-  line-height: 100px;
-  margin-left: 35px;
-  text-align: center;
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	border: 3px solid #333;
+	background-color: #b85142;
 }
 
+/* -------------Submit ------------------*/
 
-
-.del {
-  float: right;
-  width: 80px;
-  line-height: 100px;
-  margin-right: 60px;
-  cursor: pointer;
-  text-decoration: underline;
-  color: #ED277F;
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	background-color: #b85142;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+  margin-top: 30px;
 }
 
-
-
-
-.row p::before,
-.box p::before,
-.totalprice::before {
-  content: "$";
+.submit:hover{
+	cursor: pointer;
+	transform: rotateX(30deg);
 }
+
+.inputname{
+  padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	background-color: #BDBDBD;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+/* -------------Images for containers ------------------*/
+
+
+.imageContainer {
+       background-size: 150px 120px;
+    background-repeat: no-repeat;
+       background-image: url(http://www.cicis.com/media/1149/pizza_trad_cheese.png);
+ }
