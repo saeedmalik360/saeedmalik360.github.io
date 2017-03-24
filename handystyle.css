@@ -306,13 +306,15 @@ footer .social a:hover {
 
 /*------Info Boxes----------*/
 .servicebox{
+  
+  display: inline-block;
   color: black;
-  float: left;
+  
   width: 28vw;
   height: 40vh;
   border:1px solid black;
   border-top: 6px solid red;
-  margin-left: 20px;
+  margin-left: 5%;
   margin-top: 1%;
   text-align: center;
   border-radius: 20px;
