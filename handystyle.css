@@ -2,7 +2,7 @@
 
 a {text-decoration: none;}
 
-/* This class is added on scroll */
+/*--------------- This class is added on scroll ---------------*/
 .fixed {
 	position: fixed;
 	top: 0;
@@ -17,7 +17,7 @@ body {
 	text-align: center;
 }
 
-/* Navigation Settings */
+/*---------- Navigation Settings ---------------*/
 nav {
 	position: absolute;
 	bottom: 0;
@@ -36,12 +36,10 @@ nav li a {
 	color: #757575;
 	text-transform: uppercase;
 }
-
+/* -----------Section Settings---------------- */
 section {
 	height: 100vh;
 }
-
-/* Screens Settings */
 #screen1 {
 	background: lightgrey;
 }
@@ -51,11 +49,11 @@ section {
 }
 
 #screen2 {
-	background: #efc94d;
+	background: dimgrey;
 }
 
 #screen3 {
-	background: black;
+	background: lightsteelblue;
 }
 
 @media only screen and (max-width: 520px) {
@@ -96,11 +94,8 @@ input {
   border: none;
 }
 
-/* Floating Contact ---------------------- */
-.sunny-blue .sunny-floating-icon, 
-.sunny-blue .sunny-floating-link {
-	background: #2c3e50;
-}
+/*------------- Floating Contact ---------------------- */
+
 .sunny-orange .sunny-floating-icon, 
 .sunny-orange .sunny-floating-link {
 	background: grey;
@@ -158,7 +153,7 @@ input {
 	width: 240px !important;
 	margin: 0 10px;
 }
-/* Hover Effect */
+/* -----Hover Effect ---*/
 .sunny-floating-contact-wrap.hover {
 	opacity: 1;
   right: 0;
@@ -222,9 +217,12 @@ footer .copyright {
     margin-top: 30px;
     width: 40%;
     float: left;
+} 
 }
-  
-}
+
+
+
+/*--Footer----*/
 footer .copyright p {
   padding-left: 10%;
   color: white;
@@ -290,4 +288,36 @@ footer .social a:hover {
   background-color: #6dcd9a;
   font-size: 0.8em;
   width: 40%;
+}
+@media (max-width: 500px){
+  .insta{
+    font-size: .7em;
+  }
+  .face{
+    font-size: .7em;
+  }
+  .tweet{
+    font-size: .7em;
+  }
+  .support{
+    font-size: .7em;
+  }
+}
+
+/*------Info Boxes----------*/
+.servicebox{
+  float: left;
+  width: 28vw;
+  height: 40vh;
+  border:1px solid black;
+  border-top: 6px solid red;
+  margin-left: 20px;
+  margin-top: 1%;
+  text-align: center;
+  border-radius: 20px;
+}
+@media (max-width:500px){
+.servicebox{
+  width: 70%;
+}
 }
