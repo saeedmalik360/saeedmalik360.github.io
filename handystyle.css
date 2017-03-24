@@ -49,11 +49,11 @@ section {
 }
 
 #screen2 {
-	background: dimgrey;
+	background: lightgrey;
 }
 
 #screen3 {
-	background: lightsteelblue;
+	background: lightgrey;
 }
 
 @media only screen and (max-width: 520px) {
@@ -306,6 +306,7 @@ footer .social a:hover {
 
 /*------Info Boxes----------*/
 .servicebox{
+  color: black;
   float: left;
   width: 28vw;
   height: 40vh;
@@ -320,4 +321,8 @@ footer .social a:hover {
 .servicebox{
   width: 70%;
 }
+}
+
+p{
+  color: black;
 }

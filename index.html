@@ -127,8 +127,8 @@
 
         <script>
              $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
+            $(window).bind('scroll', function() {
+            var navHeight = $( window ).height() - 80;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('nav').addClass('fixed');
 			 }
@@ -136,16 +136,16 @@
 				 $('nav').removeClass('fixed');
 			 }
 		});
-	});
-    $(function(){
-  // Floating Contact Widget Trigger
-  $(".sunny-floating-icon").on("mouseenter", function(){
-    $(this).closest(".sunny-floating-contact-wrap").addClass("hover")
-  });
-  $(".sunny-floating-contact-wrap").on("mouseleave", function(){
-    $(this).removeClass("hover");
-  });   
-})
+        });
+        $(function(){
+        // Floating Contact Widget Trigger
+        $(".sunny-floating-icon").on("mouseenter", function(){
+            $(this).closest(".sunny-floating-contact-wrap").addClass("hover")
+        });
+        $(".sunny-floating-contact-wrap").on("mouseleave", function(){
+            $(this).removeClass("hover");
+        });   
+        })
             </script>
     </body>
 
