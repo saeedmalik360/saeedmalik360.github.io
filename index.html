@@ -1,60 +1,120 @@
 <!DOCTYPE html>
-<html> 
+ <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PizzaQuick</title>
+        <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=.5">
-        
-        <link rel="stylesheet" type="text/css" href="pizza.css">  
-</head>
-<body>
-        <div class="title"><img src="http://imgur.com/Yv0hejg.png"></div>
-        <div class="whoimage"><img src="http://imgur.com/c3vATKH.png"></div>
-        <div class="info"><h3>  We offer the best pizza in NYC and we are located on 123 Elmo St. 
-            Scroll down to order ahead.We offer the best pizza in NYC and we are located on 123 Elmo St. Scroll down to order ahead. </h3></div>
-        
-        <div class="socialinfo"><img class="socialimg" src="http://imgur.com/X4af2du.png"><img class="socialimg" src="http://imgur.com/Z1V5x3b.png"><img class="socialimg" src="http://imgur.com/vYTB14N.png"></div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="handystyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <section id="screen1">
+
+        <p>A Giant Image, Scroll down</p>
+
+        <nav>
+            <ul>
+                <img id="mainlogo" src="http://i.imgur.com/Yv0hejg.png">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Link#2</a></li>
+                <li><a href="#">Link#1</a></li>
+            </ul>
+        </nav>
+
+        </section>
+
+        <section id="screen2"></section>
+        <section id="screen3"></section>
+        <div class="sunny-floating-contacts">
+        <div class="sunny-floating-contact-wrap sunny-green">
+            <div class="sunny-floating-icon">
+            <i>&#9742;</i>
+            </div>
+            <div class="sunny-floating-link sunny-floating-phone">
+            <a class="textio" href="tel://1-555-555-5555">(555) 555-5555</a>
+            </div>
+        </div>
+        <div class="sunny-floating-contact-wrap sunny-orange">
+            <div class="sunny-floating-icon">
+            <i>&#9742;</i>
+            </div>
+            <div class="sunny-floating-link sunny-floating-email">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name"/>
+                <label for="email">Email:</label>
+                <input type="text" id="email"/>
+                
+                <label for="message">Message:</label>
+                <textarea class="input" rows="10" cols="30">Some text here</textarea>
+                
+                <button class="sunny-button" type="submit">Send</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-parallax">
+    <footer>
+  <div class="copyright">
+    <p>2017 Copyright Stuff</p>
+  </div>
+  <div class="social">
+    <a href="#" class="support">Contact Us</a>
+    <a href="#" class="face">facebook</a>
+    <a href="#" class="tweet">twitter</a>
+    <a href="#" class="insta">Instagram</a>
+  </div>
+</footer>
+</div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
 
 
-    <div class="container">
-		<h1><span class="menumage"><img src="http://imgur.com/NtrlweQ.png"></span></h1>
-  
-		<form class="form cf">
-			<section class="plan cf">
-				<h2>Choose Pizza Type:</h2>
-				<input type="radio" name="radio1" id="normalpizza" value="normalpizza"><label class="normalpizza-label radioone col" for="normalpizza"><div class="imageContainer">Some Text</div></label>
-				<input type="radio" name="radio1" id="hpizza" value="hpizza" checked><label class="hpizza-label radioone col" for="hpizza"><div class="imageContainer">Some Text</div></label>
-				<input type="radio" name="radio1" id="mpizza" value="mpizza"><label class="mpizza-label radioone col" for="mpizza"><div class="imageContainer">Some Text</div></label>
-        <input type="radio" name="radio1" id="mpizza1" value="mpizza1"><label class="mpizza1-label radioone col" for="mpizza1"><div class="imageContainer">Some Text</div></label>
-        <input type="radio" name="radio1" id="mpizza2" value="mpizza2"><label class="mpizza2-label radioone col" for="mpizza2"><div class="imageContainer">Some Text</div></label>
-         
-        
-			</section>
-			<section class="payment-plan cf">
-				<h2>Select Toppings:</h2>
-				<input type="radio" name="radio2" id="cheese" value="cheese" checked><label class="cheese-label radioone col" for="cheese"><div class="imageContainer">Some Text</div></label>
-				<input type="radio" name="radio2" id="nocheese" value="nocheese"><label class="nocheese-label radioone col" for="nocheese"><div class="imageContainer">Some Text</div></label>
-                <input type="radio" name="radio2" id="nocheese2" value="nocheese2"><label class="nocheese2-label radioone col" for="nocheese2"><div class="imageContainer">Some Text</div></label>
-                <input type="radio" name="radio2" id="nocheese3" value="nocheese3"><label class="nocheese3-label radioone col" for="nocheese3"><div class="imageContainer">Some Text</div></label>
-			</section>
-			<section class="payment-type cf">
-				<h2>Select crust:</h2>
-				<input type="radio" name="radio3" id="normalcrust" value="normalcrust"><label class="normalcrust-label radioone col" for="normalcrust"><div class="imageContainer">Some Text</div></label>
-				<input type="radio" name="radio3" id="heavycrust" value="heavycrust"><label class="heavycrust-label radioone col" for="heavycrust"><div class="imageContainer">Some Text</div></label>
-				<input type="radio" name="radio3" id="lightcrust" value="lightcrust" checked><label class="lightcrust-label radioone col" for="lightcrust"><div class="imageContainer">Some Text</div></label>
-			</section>	
-      
-                <h2>Finalize:</h2>
-            <input class="inputname" type="text" id="fname" name="firstname" placeholder="NAME">
 
 
-  
-			<input class="submit" type="submit" value="Order Ahead">		
-		</form>
-	</div>
-        
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+             $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+    $(function(){
+  // Floating Contact Widget Trigger
+  $(".sunny-floating-icon").on("mouseenter", function(){
+    $(this).closest(".sunny-floating-contact-wrap").addClass("hover")
+  });
+  $(".sunny-floating-contact-wrap").on("mouseleave", function(){
+    $(this).removeClass("hover");
+  });   
+})
+            </script>
+    </body>
+
+
 </html>
