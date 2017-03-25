@@ -29,6 +29,34 @@
         </div>
     </div>
     </nav>
+
+    
+    <div id="modalout2">
+      <div class="modaloutTab2">
+        <div>
+          <p>Team</p>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title">Team</h4> </div>
+        <div class="modal-body">
+          <div>
+            
+            </div>
+        </div>
+        <div class="modal-footer"> </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center">  
+        <h1>HandyMan</h1>     
+        <p>Company moto or something else.</p> 
+        <div class="container">
+      <br>   
+        </div>   
+    </div>
+
     <div id="modalout">
       <div class="modaloutTab">
         <div>
@@ -41,25 +69,27 @@
         <div class="modal-body">
           <div>
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Jersey City NJ</p>
+            <p>Call us:</p>
             <a class="glyphicon glyphicon-phone textio" href="tel://1-555-555-5555"> (555) 555-5555</a>
-            <a href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top">saeedmalik360@gmail.com</a>
-            <p> Instagram</p>
-            <p> Twitter</p>
-            <p> Facebook</p>
+            <p>Email us:</p>
+            <a class="glyphicon glyphicon-envelope" href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top"> saeedmalik360@gmail.com</a>
+            <p>Our Hours:</p>
+            <p>Mon-Fri: 8am to 10pm</p>
+            <p>Sat-Sun: 8am to 5pm</p>
+            <p>Find us on: </p>
+            <a href="https://twitter.com" target="--blank"><button type="button" class="btn btn-danger">Twitter</button></a>
+            <a href="https://www.instagram.com" target="--blank"><button type="button" class="btn btn-danger">Instagram</button></a>
+            <a href="https://www.facebook.com" target="--blank"><button type="button" class="btn btn-danger">Facebook</button></a>
+            
+            
+            
             </div>
         </div>
         <div class="modal-footer"> </div>
       </div>
     </div>
 
-    <div class="jumbotron text-center">  
-        <h1>HandyMan</h1>     
-        <p>Company moto or something else.</p> 
-        <div class="container">
-      <br>   
-    </div>   
-    </div>
+   
 
 
 <!-- About section -->
@@ -73,7 +103,9 @@
         
     </div>
     </div>
-    <div class="container">
+
+    
+    <div class="container-fluid">
     <div class="row text-center">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
             <h2>Quality</h2>
@@ -175,20 +207,7 @@
     </div>
 
 
-    <!-- // modalout -->
-    <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        
-        <div class="modal-body">
-          <p>This is a small modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-    </div>
+    
 
 
   <script>
@@ -197,6 +216,12 @@
       // modalout show
       this.$modalout.find('.modaloutTab').on('click', function() {
         $("#modalout").toggleClass('showmodalout');
+      });
+      this.$modalout2 = $('#modalout2');
+
+      // modalout show
+      this.$modalout2.find('.modaloutTab2').on('click', function() {
+        $("#modalout2").toggleClass('showmodalout2');
       });
   </script>
 </body>
