@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -23,46 +22,44 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">ABOUT</a></li>       
+            <li><a href="./index.html">Home</a></li>       
             <li><a href="#portfolio">Services</a></li>    
             <li><a href="./work.html">Work</a></li>
         </ul>
         </div>
     </div>
     </nav>
-
-<!-- // modalout -->
-<div id="modalout">
-  <div class="modaloutTab">
-    <div>
-      <p>Contact</p>
-    </div>
-  </div>
-  <div class="modal-content">
-    <div class="modal-header"> 
-      <h4 class="modal-title">Contact</h4> </div>
-    <div class="modal-body">
-      <div>
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Jersey City NJ</p>
-        <a class="glyphicon glyphicon-phone textio" href="tel://1-555-555-5555"> (555) 555-5555</a>
-        <a href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top">saeedmalik360@gmail.com</a>
-        <p> Instagram</p>
-        <p> Twitter</p>
-        <p> Facebook</p>
+    <div id="modalout">
+      <div class="modaloutTab">
+        <div>
+          <p>Contact</p>
         </div>
+      </div>
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <h4 class="modal-title">Contact</h4> </div>
+        <div class="modal-body">
+          <div>
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Jersey City NJ</p>
+            <a class="glyphicon glyphicon-phone textio" href="tel://1-555-555-5555"> (555) 555-5555</a>
+            <a href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top">saeedmalik360@gmail.com</a>
+            <p> Instagram</p>
+            <p> Twitter</p>
+            <p> Facebook</p>
+            </div>
+        </div>
+        <div class="modal-footer"> </div>
+      </div>
     </div>
-    <div class="modal-footer"> </div>
-  </div>
-</div>
-<!-- // Scroll content -->
-<div class="jumbotron text-center">  
-    <h1>HandyMan</h1>     
-    <p>Company moto or something else.</p> 
-    <div class="container">
-   <br>   
- </div>   
-</div>
+
+    <div class="jumbotron text-center">  
+        <h1>HandyMan</h1>     
+        <p>Company moto or something else.</p> 
+        <div class="container">
+      <br>   
+    </div>   
+    </div>
 
 
 <!-- About section -->
@@ -78,18 +75,18 @@
     </div>
     <div class="container">
     <div class="row text-center">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <<h2>Quality</h2>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
+            <h2>Quality</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <<h2>Support</h2>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
+            <h2>Support</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <<h2>Modern Style</h2>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
+            <h2>Modern Style</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
         </div>
@@ -104,7 +101,7 @@
     <div class="row text-center">
         <div class="col-sm-4">
         <div class="thumbnail">
-            <img src="http://imgur.com/9HhJB7J.png" alt="Service1" width="400" height="300">
+            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service1" width="400" height="300">
             <p><strong>Service1</strong></p>
             <p>We have this service</p>
             <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service1info">More Info</button>
@@ -194,13 +191,13 @@
     </div>
 
 
- <script>
-    this.$modalout = $('#modalout');
+  <script>
+      this.$modalout = $('#modalout');
 
-    // modalout show
-    this.$modalout.find('.modaloutTab').on('click', function() {
-      $("#modalout").toggleClass('showmodalout');
-    });
-</script>
+      // modalout show
+      this.$modalout.find('.modaloutTab').on('click', function() {
+        $("#modalout").toggleClass('showmodalout');
+      });
+  </script>
 </body>
 </html>
