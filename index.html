@@ -1,153 +1,241 @@
 <!DOCTYPE html>
- <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="handystyle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <section id="screen1">
+<html lang="en">
+<head>
+  <title>HandyMan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="handystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        <p>A Giant Image or a slideshow. Take up fullscreen or can be a box, Scroll down</p>
-        <p>A caption underneath the slideshow?</p>
-
-        <nav>
-            <ul>
-                <img id="mainlogo" src="http://i.imgur.com/Yv0hejg.png">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Link#2</a></li>
-                <li><a href="#">Link#1</a></li>
-            </ul>
-        </nav>
-
-        </section>
-
-        <section id="screen2">
-            <div>
-                <div class="servicebox">
-                    <h3>Service # 1</h3>
-                    <img src="http://i.imgur.com/fLGfPCg.png" alt="">
-                    <p>WE offer this serviceWE offer this serviceWE offer this serviceWE offer this service</p>
-                </div>
-            </div>
-             <div>
-                <div class="servicebox">
-                    <h3>Service # 1</h3>
-                    <img src="http://i.imgur.com/fLGfPCg.png" alt="">
-                    <p>WE offer this serviceWE offer this serviceWE offer this serviceWE offer this service</p>
-                </div>
-            </div>
-             <div>
-                <div class="servicebox">
-                    <h3>Service # 1</h3>
-                    <img src="http://i.imgur.com/fLGfPCg.png" alt="">
-                    <p>WE offer this serviceWE offer this serviceWE offer this serviceWE offer this service</p>
-                </div>
-            </div>
-            <div>
-                <div class="servicebox">
-                    <h3>Service # 1</h3>
-                    <img src="http://i.imgur.com/fLGfPCg.png" alt="">
-                    <p>WE offer this serviceWE offer this serviceWE offer this serviceWE offer this service</p>
-                </div>
-            </div>
-
-
-
-        </section>
-        <section id="screen3"></section>
-        <div class="sunny-floating-contacts">
-        <div class="sunny-floating-contact-wrap sunny-green">
-            <div class="sunny-floating-icon">
-            <i>&#9742;</i>
-            </div>
-            <div class="sunny-floating-link sunny-floating-phone">
-            <a class="textio" href="tel://1-555-555-5555">(555) 555-5555</a>
-            </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">HandyMan</a>
         </div>
-        <div class="sunny-floating-contact-wrap sunny-orange">
-            <div class="sunny-floating-icon">
-            <i>&#9742;</i>
-            </div>
-            <div class="sunny-floating-link sunny-floating-email">
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name"/>
-                <label for="email">Email:</label>
-                <input type="text" id="email"/>
-                
-                <label for="message">Message:</label>
-                <textarea class="input" rows="10" cols="30"></textarea>
-                
-                <button href="mailto:saeedmalik360@gmail.com"class="sunny-button" type="submit">Send</button>
-            </form>
-            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>       
+            <li><a href="#portfolio">Services</a></li>    
+            <li><a href="./work.html">Work</a></li>
+        </ul>
         </div>
     </div>
-    <div class="wrapper-parallax">
-    <footer>
-  <div class="copyright">
-    <p>SOmething can go here, copyright and contact info.</p>
+    </nav>
+
+<!-- // modalout -->
+<div id="modalout">
+  <div class="modaloutTab">
+    <div>
+      <p>Contact</p>
+    </div>
   </div>
-  <div class="social">
-    <a href="#" class="support">Contact Us</a>
-    <a href="https://www.facebook.com/" class="face">facebook</a>
-    <a href="https://twitter.com/" class="tweet">twitter</a>
-    <a href="https://www.instagram.com/" class="insta">Instagram</a>
+  <div class="modal-content">
+    <div class="modal-header"> 
+      <h4 class="modal-title">Contact</h4> </div>
+    <div class="modal-body">
+      <div>
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Jersey City NJ</p>
+        <a class="glyphicon glyphicon-phone textio" href="tel://1-555-555-5555"> (555) 555-5555</a>
+        <a href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top">saeedmalik360@gmail.com</a>
+        <p> Instagram</p>
+        <p> Twitter</p>
+        <p> Facebook</p>
+        </div>
+    </div>
+    <div class="modal-footer"> </div>
   </div>
-</footer>
 </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!-- // Scroll content -->
+<div class="jumbotron text-center">
+    <h1>HandyMan</h1> 
+    
+    <p>Company moto or something else.</p> 
+    <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Slides -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="http://i.imgur.com/R79QVvq.jpg" alt="handyslide" width="460" height="345">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://i.imgur.com/R79QVvq.jpg" alt="handyslide" width="460" height="345">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="http://i.imgur.com/R79QVvq.jpg" alt="handyslide" width="460" height="345">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://i.imgur.com/R79QVvq.jpg" alt="handyslide" width="460" height="345">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    
+    </div>
+
+<!-- About section -->
+    <div id="about" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-sm-12">
+        <h2>About Company Page</h2><br>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+        </div>
+        
+    </div>
+    </div>
 
 
 
+<!-- Services Section -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Services</h2><br>
+    <h4>Heres what we offer</h4>
+    <div class="row text-center">
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="Service1" width="400" height="300">
+            <p><strong>Service1</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service1info">More Info</button>
+            <div id="service1info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="Service2" width="400" height="300">
+            <p><strong>Service2</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service2info">More Info</button>
+            <div id="service2info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="Service3" width="400" height="300">
+            <p><strong>Service3</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service3info">More Info</button>
+            <div id="service3info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="San Francisco" width="400" height="300">
+            <p><strong>Service3</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service4info">More Info</button>
+            <div id="service4info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="Service1" width="400" height="300">
+            <p><strong>Service1</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service5info">More Info</button>
+            <div id="service5info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="thumbnail">
+            <img src="http://imgur.com/9HhJB7J.png" alt="Service1" width="400" height="300">
+            <p><strong>Service1</strong></p>
+            <p>We have this service</p>
+            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service6info">More Info</button>
+            <div id="service6info" class="collapse">
+            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
+            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
+            </div>
+        </div>
+        </div>
+    </div><br>   
+    </div>
 
 
+    <!-- // modalout -->
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
+ <script>
+     this.$modalout = $('#modalout');
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <script>
-             $(document).ready(function(){
-            $(window).bind('scroll', function() {
-            var navHeight = $( window ).height() - 70;
-			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
-			 }
-			 else {
-				 $('nav').removeClass('fixed');
-			 }
-		});
-        });
-        $(function(){
-        // Floating Contact Widget Trigger
-        $(".sunny-floating-icon").on("mouseenter", function(){
-            $(this).closest(".sunny-floating-contact-wrap").addClass("hover")
-        });
-        $(".sunny-floating-contact-wrap").on("mouseleave", function(){
-            $(this).removeClass("hover");
-        });   
-        })
-            </script>
-    </body>
-
-
+// modalout show
+this.$modalout.find('.modaloutTab').on('click', function() {
+  $("#modalout").toggleClass('showmodalout');
+});
+</script>
+</body>
 </html>
