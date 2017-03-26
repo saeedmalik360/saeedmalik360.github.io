@@ -9,6 +9,7 @@ html {
   overflow: visible;
   height: 100%;
   width: 100%;
+  color: black;
 }
 h2 {
     font-size: 24px;
@@ -27,12 +28,15 @@ h4 {
 .jumbotron {
     background-image: url("http://i.imgur.com/nPNKALN.jpg");
     background-repeat: no-repeat;
-    color: #fff;
+    
     padding: 200px 25px;
     font-family: Montserrat, sans-serif;
 }
 .container-fluid {
     padding: 60px 50px;
+}
+.row-fluid {
+    padding: 5px 10px;
 }
 .aboutinfo{
     background: darkgray;
@@ -87,6 +91,7 @@ h4 {
   .logo {
       font-size: 150px;
   }
+  
 }
 
 /*------------- Floating Contact ---------------------- */
@@ -108,7 +113,7 @@ h4 {
 }
 .modaloutTab {
   color: black;
-  margin-top: 200px;
+  margin-top: 400px;
   position: absolute;
   left: -40px;
   height: 100px;
@@ -146,7 +151,7 @@ h4 {
 }
 .modaloutTab2 {
   color: black;
-  margin-top: 60px;
+  margin-top: 300px;
   position: absolute;
   right: -40px;
   height: 100px;
@@ -170,10 +175,4 @@ h4 {
 .modal-body {
   height: 500px;
 }
-body,
-html {
-  background: #4DA6BB;
-  overflow: visible;
-  height: 100%;
-  width: 100%;
-}
+
