@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IceCream Shop</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="icecreamstyle.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="ic3 text-center">
+  <div><img src="./images/iclogo.png"></div>
+  <div class="topic"><img  src="./images/ictop.png" alt="topicecream">
+    </button>  
+    <div id="topicHidden">
+      <h3>We Love iceCream and We Show it by providing the best service.</h3>
+      <h3>BLAH BLAH BLAH</h3>
+    </div>
+  </div>
+  <div class="middleic"><img src="./images/icbot.png"alt="middleicecream">
+    <div id="middleicHidden">
+      <h3>We are Located on blah blah st</h3>
+    </div>
+  </div>
+  <div class="botic"><img src="./images/icmid.png"alt="bottomicecream">
+    <div id="boticHidden">
+      <h3>Social Media Link 1</h3>
+      <h3>social Media Link 2</h3>
+    </div>
+  </div>
+  <div class="btmstick"> <a href="menu.html"><img src="./images/icstick.png"></div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      
+    $(".topic img").click(function(){
+        $("#topicHidden").toggle();
+        $("#topicHidden").addClass("animated pulse");
+    });
+    $(".middleic img").click(function(){
+      $("#middleicHidden").toggle();
+      $("#middleicHidden").addClass("animated pulse");
+    })
+    $(".botic img").click(function(){
+      $("#boticHidden").toggle();
+      $("#boticHidden").addClass("animated pulse");
+    })   
+    });
+    </script>
+</body>
+
+</html>

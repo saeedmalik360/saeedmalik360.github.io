@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PizzaQuick</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=.5">
+        
+        <link rel="stylesheet" type="text/css" href="pizza.css">  
+</head>
+<body>
+        <div class="title"><img src="./images/pizzalogo.png"></div>
+        <div class="whoimage"><img src="./images/pizzawho.png"></div>
+        <div class="info"><h3>  Here at Pizza Quick we make every one of our pizzas fresh,. Our pizza is so fresh it will make you want it so quick so that you might use the interactive menu and order quickly. Its all so quick. 
+			 Come and visit - your taste buds will thank you! </h3></div>
+        
+        <div class="socialinfo"><img class="socialimg" src="./images/pizzafacebook.png"><img class="socialimg" src="./images/pizzainsta.png"><img class="socialimg" src="./images/pizzacontact.png"></div>
+
+
+
+    <div class="container">
+		<h1><span class="menumage"><img src="./images/pizzamenu.png"></span></h1>
+  
+		<form class="form cf">
+			<section class="pizza-type cf">
+				<h2>Choose Pizza Type:</h2>
+				<input type="radio" name="radio1" id="normalpizza" value="normalpizza"><label class="normalpizza-label radioone col" for="normalpizza"><div class="imageContainer">Normal</div></label>
+				<input type="radio" name="radio1" id="hpizza" value="hpizza" checked><label class="hpizza-label radioone col" for="hpizza"><div class="imageContainer">Hawaiian</div></label>
+				<input type="radio" name="radio1" id="mpizza" value="mpizza"><label class="mpizza-label radioone col" for="mpizza"><div class="imageContainer">Buffalo Chicken</div></label>
+        		<input type="radio" name="radio1" id="mpizza1" value="mpizza1"><label class="mpizza1-label radioone col" for="mpizza1"><div class="imageContainer">Pepperoni</div></label>
+        		<input type="radio" name="radio1" id="mpizza2" value="mpizza2"><label class="mpizza2-label radioone col" for="mpizza2"><div class="imageContainer">Deluxe</div></label>
+         
+        
+			</section>
+			<section class="topping-type cf">
+				<h2>Select Toppings:</h2>
+				<input type="radio" name="radio2" id="cheese" value="cheese" checked><label class="cheese-label radioone col" for="cheese"><div class="imageContainer">Pineapple</div></label>
+				<input type="radio" name="radio2" id="nocheese" value="nocheese"><label class="nocheese-label radioone col" for="nocheese"><div class="imageContainer">Chicken</div></label>
+                <input type="radio" name="radio2" id="nocheese2" value="nocheese2"><label class="nocheese2-label radioone col" for="nocheese2"><div class="imageContainer">Onions</div></label>
+                <input type="radio" name="radio2" id="nocheese3" value="nocheese3"><label class="nocheese3-label radioone col" for="nocheese3"><div class="imageContainer">Peppers</div></label>
+				<input type="radio" name="radio2" id="nocheese4" value="nocheese4"><label class="nocheese4-label radioone col" for="nocheese4"><div class="imageContainer">Spinach</div></label>
+				<input type="radio" name="radio2" id="nocheese5" value="nocheese5"><label class="nocheese5-label radioone col" for="nocheese5"><div class="imageContainer">No Topping</div></label>
+				
+			</section>
+			<section class="drink-type cf">
+				<h2>Select Drink:</h2>
+				<input type="radio" name="radio3" id="normalcrust" value="normalcrust"><label class="normalcrust-label radioone col" for="normalcrust"><div class="imageContainer">Coke</div></label>
+				<input type="radio" name="radio3" id="heavycrust" value="heavycrust"><label class="heavycrust-label radioone col" for="heavycrust"><div class="imageContainer">Fanta</div></label>
+				<input type="radio" name="radio3" id="lightcrust" value="lightcrust" checked><label class="lightcrust-label radioone col" for="lightcrust"><div class="imageContainer">Sprite</div></label>
+			</section>	
+      
+                <h2>Finalize:</h2>
+            <input class="inputname" type="text" id="fname" name="firstname" placeholder="NAME">
+
+
+  
+			<input class="submit" type="submit" value="Order Ahead">		
+		</form>
+	</div>
+        
+</body>
+</html>

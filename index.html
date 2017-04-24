@@ -1,382 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>HandyMan</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="handystyle.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#myPage">HandyMan</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="./index.html">Home</a></li>       
-            <li><a href="#portfolio">Services</a></li>    
-            <li><a href="./work.html">Work</a></li>
-        </ul>
-        </div>
-    </div>
-    </nav>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Saeed Malik</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+<body>
+      <div class="wrapper">
+	<input id="tab-1" class="tab" type="radio" name="nav">
+	<input id="tab-2" class="tab" type="radio" name="nav">
+	<input id="tab-3" class="tab" type="radio" name="nav" checked>
+	<input id="tab-4" class="tab" type="radio" name="nav">
+	<div class="content">
+		<div class="htm">
+			<h1>Javascript Projects</h1>
+			<div class="grd clearfix">
+				
+				
+				<div class="col">
+					<div class="portfolio wip">
+						<a href="" target="_blank">
+							<span class="title"><b>Firebase Todolist</b></span>
+							<span class="titleinfo">Vue.js, Bootstrap and Firebase</span>
+							
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="portfolio wip">
+						<a href="" target="_blank">
+							<span class="title"><b>Weather App</b></span>
+							<span class="titleinfo">jQuery and Ajax</span>
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="portfolio wip">
+						<a href="" target="_blank">
+							<span class="title"><b>Fruit Shop</b></span>
+							<span class="titleinfo">Vue.js</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="htm">
+			<h1>Websites</h1>
+			<div class="grd clearfix">
+				
+				
+				<div class="col">
+					<div class="portfolio wwp">
+						<a href="http://handyjc.com" target="_blank">
+							<span class="title"><b>Handyjc.com</b></span>
+							<span class="titleinfo">Construction Website for a client</span>
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="portfolio wwp">
+						<a href="pizza.html" target="_blank">
+							<span class="title"><b>Pizza Store</b></span>
+							<span class="titleinfo">Mockup store with a interactive menu</span>
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="portfolio wwp">
+						<a href="icecream.html" target="_blank">
+							<span class="title"><b>Iecream Store</b></span>
+							<span class="titleinfo">Interactive landing page and menu</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="htm">
+			<p><code>I'm a Front-End Developer
+        who loves minimal and efficient code because
+        simplicity is king.</code></p>
+        <p><code>I primarily work with Angular 2 and ReactJS using NodeJS as my backend and use Python for penetration testing.
+        Scroll down to see my projects or view them in detail at my <a href="https://www.saeedmalik.com" id="pa"><code>Github</code></a> or get in
+         <a href="https://www.saeedmalik.com" id="pamail"><code>Contact</code></a>.</code></p>
+			<p></p>
+		</div>
+			<div class="htm">
+				<div class="skills">JavaScript</div>
+				<div class="skills">HTML</div>
+				<div class="skills">CSS</div>
+				<div class="skills">Angular</div>
+				<div class="skills">React</div>
+			</div>
+	</div>
+				<div class="nav">
+					<div class="links">
+						<label for="tab-1">Projects</label>
+						<label for="tab-2">Websites</label>
+						<label for="tab-3">Me</label>
+						<label for="tab-4">skillset</label>
+					</div>
+				</div>
+			</div>
 
-    
-    <div id="modalout2">
-      <div class="modaloutTab2">
-        <div>
-          <p>Team</p>
-        </div>
-      </div>
-      <div class="modal-content">
-        <div class="modal-header"> 
-          <h4 class="modal-title">Team</h4> </div>
-        <div class="modal-body">
-          <div>
-            
-            </div>
-        </div>
-        <div class="modal-footer"> </div>
-      </div>
-    </div>
-
-    <div class="jumbotron text-center">  
-        <h1>HandyMan</h1>     
-        <p>Company moto or something else.</p> 
-        <div class="container">
-      <br>   
-        </div>   
-    </div>
-
-    <div id="modalout">
-      <div class="modaloutTab">
-        <div>
-          <p>Contact</p>
-        </div>
-      </div>
-      <div class="modal-content">
-        <div class="modal-header"> 
-          <h4 class="modal-title">Contact</h4> </div>
-        <div class="modal-body">
-          <div>
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p>Call us:</p>
-            <a class="glyphicon glyphicon-phone textio" href="tel://1-555-555-5555"> (555) 555-5555</a>
-            <p>Email us:</p>
-            <a class="glyphicon glyphicon-envelope mailio" href="mailto:saeedmalik360@gmail.com?Subject=Hello%20again" target="_top"> saeedmalik360@gmail.com</a>
-            <p>Our Hours:</p>
-            <p>Mon-Fri: 8am to 10pm</p>
-            <p>Sat-Sun: 8am to 5pm</p>
-            <p>Find us on: </p>
-            <a href="https://twitter.com" target="--blank"><button type="button" class="btn btn-danger">Twitter</button></a>
-            <a href="https://www.instagram.com" target="--blank"><button type="button" class="btn btn-danger">Instagram</button></a>
-            <a href="https://www.facebook.com" target="--blank"><button type="button" class="btn btn-danger">Facebook</button></a>
-            
-            
-            
-            </div>
-        </div>
-        <div class="modal-footer"> </div>
-      </div>
-    </div>
-
-   
-
-
-<!-- About section -->
-    <div id="about" class="container-fluid">
-    <div class="row text-center">
-        <div class="col-sm-12">
-        <h2>About Company Page</h2><br>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        </div>
+			<div>
+				<div class="maintitle">Saeed Malik</div>
+				<div class="maintitle2">Web Developer</div>
+			</div>
         
-    </div>
-    </div>
-
-    
-    <div class="container-fluid">
-    <div class="row text-center">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
-            <h2>Quality</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
-            <h2>Support</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 aboutinfo">
-            <h2>Modern Style</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        </div>
-    </div>
-    </div>
-
-
-<!-- Services Section -->
-    <div id="portfolio" class="container-fluid text-center bg-grey">
-    <h2>Services</h2><br>
-    <h4>Heres what we offer</h4>
-    <div class="row text-center">
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service1" width="400" height="300">
-            <p><strong>Service1</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service1info">More Info</button>
-            <div id="service1info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service2" width="400" height="300">
-            <p><strong>Service2</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service2info">More Info</button>
-            <div id="service2info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service3" width="400" height="300">
-            <p><strong>Service3</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service3info">More Info</button>
-            <div id="service3info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="San Francisco" width="400" height="300">
-            <p><strong>Service3</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service4info">More Info</button>
-            <div id="service4info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service1" width="400" height="300">
-            <p><strong>Service1</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service5info">More Info</button>
-            <div id="service5info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-        <div class="col-sm-4">
-        <div class="thumbnail">
-            <img src="http://i.imgur.com/cMWbJpx.jpg" alt="Service1" width="400" height="300">
-            <p><strong>Service1</strong></p>
-            <p>We have this service</p>
-            <button class="btn btn-info btn-lg" data-toggle="collapse" data-target="#service6info">More Info</button>
-            <div id="service6info" class="collapse">
-            More info about the service can go in here. More info about the service can go in here.More info about the service can go in here
-            .More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.More info about the service can go in here.
-            </div>
-        </div>
-        </div>
-    </div><br>   
-    </div>
-
-    
-    <div class="container text-center">
-    <h2>Work</h2>
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Room</a></li>
-        <li><a data-toggle="tab" href="#menu1">House</a></li>
-        <li><a data-toggle="tab" href="#menu2">Hotel</a></li>
-        <li><a data-toggle="tab" href="#menu3">Yard</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-            <div class="row-fluid text-center">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Work Gallery</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>           
-            </div>
-            <p>Work Detail or about the pictures</p>
-            <p>Work Detail or about the pictures</p> 
-            <p>Work Detail or about the pictures</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <div class="row-fluid">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Work Gallery</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>           
-            </div>
-            <p>Work Detail or about the pictures</p>
-            <p>Work Detail or about the pictures</p> 
-            <p>Work Detail or about the pictures</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <div class="row-fluid">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Work Gallery</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>           
-            </div>
-            <p>Work Detail or about the pictures</p>
-            <p>Work Detail or about the pictures</p> 
-            <p>Work Detail or about the pictures</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-            <div class="row-fluid">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Work Gallery</h1>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        <p>Info</p>
-                    </a>
-                </div>           
-            </div>
-            <p>Work Detail or about the pictures</p>
-            <p>Work Detail or about the pictures</p> 
-            <p>Work Detail or about the pictures</p>
-        </div>
-    </div>
-    </div>
-
-
-    
-
-
-  <script>
-      this.$modalout = $('#modalout');
-
-      // modalout show
-      this.$modalout.find('.modaloutTab').on('click', function() {
-        $("#modalout").toggleClass('showmodalout');
-      });
-      this.$modalout2 = $('#modalout2');
-
-      // modalout show
-      this.$modalout2.find('.modaloutTab2').on('click', function() {
-        $("#modalout2").toggleClass('showmodalout2');
-      });
-  </script>
 </body>
 </html>
